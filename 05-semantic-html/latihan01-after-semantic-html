@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+               
   <!-- HEADER AREA -->
   <header>  
     <h1>WPU Tech News</h1>
@@ -21,7 +21,7 @@
   </header>
 
   <!-- KONTEN UTAMA -->
-  <main
+<main>
 
     <!-- Artikel Utama -->
     <section id="content">
