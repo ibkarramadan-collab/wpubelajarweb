@@ -3,9 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Coba CSS - Selector & Property</title>
+  <style>
+    h1 {
+      font-size: 120px;
+      font-family: Arial;
+      color:royalblue;
+      text-align: center;
+    }
+    .p2 {
+      color:cadetblue;
+    }
+
+    p{
+      font-size: 30px;
+      font-family: Arial;
+      color:darkgreen;
+      text-align: justify;
+    }
+    #judul{
+      text-transform: uppercase;  
+    }
+
+    #garis-bawah{
+      text-decoration: underline;
+    }
+
+    .cetak-miring{
+      font-style: italic;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <h1 id="judul" class="p2 cetak-miring">Hello World</h1>
+  <p id="garis-bawah" class="cetak-miring">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex, ut voluptatibus ratione, nobis atque rem, tenetur eveniet magni eius sint fuga excepturi! Quae, rerum officiis minima inventore nobis eveniet!
+  </p>
+  <p class="p2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint aliquid placeat, et cumque dolore non aspernatur quam error mollitia.
+  </p>
 </body>
 </html>
