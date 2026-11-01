@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coba CSS - font styling</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Press+Start+2P&display=swap');
+
+    @font-face{
+      font-family: Gabarito;
+      src: url("fonts/Gabarito-Medium.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+
+    }
+
+    h1{
+      font-size: 60px;
+      font-family: "Changa One", cursive;
+      color:royalblue;
+      text-align: center;
+      font-weight: 300px
+    }
+
+    p{
+      font-size: 20px;
+      font-family: "Press Start 2P", cursive;
+      color:navy;
+      text-align:center
+    }
+
+    .font-gabarito{
+      font-family: Gabarito, Arial, sans-serif;
+      font-size: 20px;
+      color: darkorange;
+      text-align:center
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>
+    lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex, ut voluptatibus ratione, nobis atque rem, tenetur eveniet magni eius sint fuga excepturi! Quae, rerum officiis minima inventore nobis eveniet!
+  </p>
+
+  <P class="font-gabarito">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque a error nam adipisci molestiae et quae ad rerum vero.
+  </P>
+
+</body>
+</html>
