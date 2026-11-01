@@ -4,61 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <title>Quote Berbeda</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', Arial, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       margin: 0;
-      padding: 60px 40px;
+      padding: 80px 40px;
+      min-height: 100vh;
+      box-sizing: border-box;
       text-align: center;
       background-color: #0d1117;
-      background-image: url();
+      background-image:
+        linear-gradient(rgba(12, 32, 72, 0.65), rgba(5, 10, 25, 0.85)),
+        url(img/laut.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     h1 {
-      font-family: 'Bebas Neue', Impact, sans-serif;
-      font-size: 64px;
-      font-weight: 400;
-      letter-spacing: 6px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 56px;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      margin-bottom: 40px;
-      color: #f1c40f;
-
-      text-decoration: underline;
-      text-decoration-style: wavy;
-      text-decoration-color: #e67e22;
-      text-decoration-thickness: 3px;
-      text-shadow: 3px 3px 0px #7f8c8d;
+      margin: 0 0 50px;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      filter: drop-shadow(0 0 14px rgba(96, 165, 250, 0.55));
     }
 
     p {
-      font-family: 'Poppins', Arial, sans-serif;
-      font-style: normal;
-      font-weight: 300;
+      font-family: 'Courier New', Courier, monospace;
       font-size: 20px;
-      line-height: 2;
-      color: black solid;
-      margin-bottom: 30px;    
+      font-weight: bold;
+      line-height: 2.2;
+      color: #ffffff;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
     }
 
     del {
-      color: #e74c3c;
+      color: #ff4d6d;
+      text-decoration: none;
+      text-shadow: 0 0 10px rgba(255, 77, 109, 0.6);
     }
 
     .author {
-      font-family: 'Poppins', Arial, sans-serif;
-      font-size: 15px;
-      color: gold;
-      font-style: normal;
-      font-weight: 600;
-      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.6;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin: 50px auto 0;
+      padding: 0;
+      background: none;
+      border: none;
+      box-shadow: none;
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
     }
 
-    body{
-      background-image: url(img/laut.jpg
-      )
+    .author::before {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 1px;
+      margin: 0 auto 24px;
+      background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.6), transparent);
     }
   </style>
 </head>
