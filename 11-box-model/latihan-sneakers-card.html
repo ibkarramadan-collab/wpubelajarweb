@@ -1,201 +1,211 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ortuseight Sneakers Card</title>
-  <style>
-    /* Pengaturan dasar untuk memposisikan card di tengah layar */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f5f5f5;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortuseight Sneakers Card</title>
+    <style>
+        /* Pengaturan dasar untuk memposisikan card di tengah layar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+        }
 
-    /* Container utama dari Card */
-    .card {
-      background-color: #ffffff;
-      width: 320px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      padding: 24px;
-      box-sizing: border-box;
-    }
+        /* Container utama dari Card */
+        .card {
+            background-color: #ffffff;
+            width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 24px;
+            box-sizing: border-box;
+        }
 
-    /* Container untuk gambar produk */
-    .image-container {
-      width: 100%;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 24px;
-      background-color: #f9f9f9;
-    }
+        /* Container untuk gambar produk */
+        .image-container {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            background-color: #f9f9f9; 
+        }
 
-    .image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    /* Styling untuk Merek/Kategori */
-    .brand {
-      color: #ff5722;
-      /* Disesuaikan sedikit ke warna oranye khas Ortuseight */
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 8px;
-    }
+        /* Styling untuk Merek/Kategori */
+        .brand {
+            color: #ff5722;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
 
-    /* Styling untuk Nama Produk */
-    .title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #111111;
-      margin: 0 0 12px 0;
-    }
+        /* Styling untuk Nama Produk */
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111111;
+            margin: 0 0 12px 0;
+        }
 
-    /* Styling untuk Deskripsi */
-    .description {
-      font-size: 13px;
-      color: #666666;
-      line-height: 1.6;
-      margin: 0 0 20px 0;
-    }
+        /* Styling untuk Deskripsi */
+        .description {
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+        }
 
-    /* Container untuk Harga */
-    .price-container {
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 20px;
-    }
+        /* Container untuk Harga */
+        .price-container {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 20px;
+        }
 
-    .current-price {
-      font-size: 20px;
-      font-weight: 800;
-      color: #000000;
-      margin-right: 8px;
-    }
+        .current-price {
+            font-size: 20px;
+            font-weight: 800;
+            color: #000000;
+            margin-right: 8px;
+        }
 
-    .original-price {
-      font-size: 13px;
-      color: #999999;
-      text-decoration: line-through;
-      font-weight: 500;
-    }
+        .original-price {
+            font-size: 13px;
+            color: #999999;
+            text-decoration: line-through;
+            font-weight: 500;
+        }
 
-    /* Styling untuk Pilihan Ukuran */
-    .size-label {
-      font-size: 12px;
-      font-weight: 700;
-      color: #111111;
-      margin: 0 0 12px 0;
-    }
+        /* Styling untuk Pilihan Ukuran */
+        .size-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #111111;
+            margin: 0 0 12px 0;
+        }
 
-    .sizes {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
+        .sizes {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
 
-    .size-btn {
-      width: 40px;
-      height: 40px;
-      border: 1px solid #e0e0e0;
-      background-color: #ffffff;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #333333;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-    }
+        /* Sembunyikan input radio aslinya */
+        .size-input {
+            display: none;
+        }
 
-    /* Hover effect pada tombol ukuran */
-    .size-btn:hover {
-      border-color: #111111;
-    }
+        /* Ubah styling .size-btn untuk label */
+        .size-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #e0e0e0;
+            background-color: #ffffff;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333333;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            box-sizing: border-box; /* Agar border tidak menambah ukuran */
+        }
 
-    /* State ukuran saat dipilih (aktif) */
-    .size-btn.active {
-      background-color: #000000;
-      color: #ffffff;
-      border-color: #000000;
-    }
+        .size-btn:hover {
+            border-color: #111111;
+        }
 
-    /* Tombol Tambahkan ke Keranjang */
-    .add-to-cart {
-      width: 100%;
-      background-color: #000000;
-      color: #ffffff;
-      border: none;
-      border-radius: 8px;
-      padding: 16px 0;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
+        /* Kalau radio button terpilih (:checked), ubah gaya label yang ada di sebelahnya (+) */
+        .size-input:checked + .size-btn {
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #000000;
+        }
 
-    .add-to-cart:hover {
-      background-color: #222222;
-    }
-  </style>
+        /* Tombol Tambahkan ke Keranjang */
+        .add-to-cart {
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 16px 0;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #222222;
+        }
+    </style>
 </head>
-
 <body>
 
-  <div class="card">
-    <!-- Bagian Gambar -->
-    <div class="image-container">
-      <img
-        src="img/ortus.jpg"
-        alt="Ortuseight Hypersonic 2.0">
-    </div>
-
-    <!-- Bagian Konten Teks -->
-    <div class="content">
-      <div class="brand">ORTUSEIGHT</div>
-      <h1 class="title">Hypersonic 2.0 White Ortrange</h1>
-      <p class="description">
-        Sepatu lari premium edisi terbatas dengan desain eksklusif. Dirancang untuk kecepatan maksimal dengan bantalan
-        empuk dan tolakan responsif untuk memecahkan rekor lari Anda.
-      </p>
-
-      <!-- Bagian Harga -->
-      <div class="price-container">
-        <span class="current-price">Rp 1.199.000</span>
-        <span class="original-price">Rp 1.499.000</span>
-      </div>
-
-      <!-- Bagian Pemilihan Ukuran (Disesuaikan ke EU) -->
-      <div class="size-selector">
-        <p class="size-label">Pilih Ukuran (EU):</p>
-        <div class="sizes">
-          <button class="size-btn">40</button>
-          <button class="size-btn active">41</button>
-          <button class="size-btn">42</button>
-          <button class="size-btn">43</button>
-          <button class="size-btn">44</button>
+    <div class="card">
+        <!-- Path gambar merujuk ke folder img/ -->
+        <div class="image-container">
+            <img src="img/ortus.jpg" alt="Ortuseight Hypersonic 2.0">
         </div>
-      </div>
 
-      <!-- Tombol Aksi -->
-      <button class="add-to-cart">TAMBAHKAN KE KERANJANG</button>
+        <div class="content">
+            <div class="brand">ORTUSEIGHT</div>
+            <h1 class="title">Hypersonic 2.0 White Ortrange</h1>
+            <p class="description">
+                Sepatu lari premium edisi terbatas dengan desain eksklusif. Dirancang untuk kecepatan maksimal dengan bantalan empuk dan tolakan responsif untuk memecahkan rekor lari Anda.
+            </p>
+
+            <div class="price-container">
+                <span class="current-price">Rp 1.199.000</span>
+                <span class="original-price">Rp 1.499.000</span>
+            </div>
+
+            <!-- Bagian Pemilihan Ukuran dengan HTML/CSS murni -->
+            <div class="size-selector">
+                <p class="size-label">Pilih Ukuran (EU):</p>
+                <div class="sizes">
+                    <!-- Ukuran 40 -->
+                    <input type="radio" id="size-40" name="shoe-size" class="size-input">
+                    <label for="size-40" class="size-btn">40</label>
+
+                    <!-- Ukuran 41 (Default Terpilih) -->
+                    <input type="radio" id="size-41" name="shoe-size" class="size-input" checked>
+                    <label for="size-41" class="size-btn">41</label>
+
+                    <!-- Ukuran 42 -->
+                    <input type="radio" id="size-42" name="shoe-size" class="size-input">
+                    <label for="size-42" class="size-btn">42</label>
+
+                    <!-- Ukuran 43 -->
+                    <input type="radio" id="size-43" name="shoe-size" class="size-input">
+                    <label for="size-43" class="size-btn">43</label>
+
+                    <!-- Ukuran 44 -->
+                    <input type="radio" id="size-44" name="shoe-size" class="size-input">
+                    <label for="size-44" class="size-btn">44</label>
+                </div>
+            </div>
+
+            <button class="add-to-cart">TAMBAHKAN KE KERANJANG</button>
+        </div>
     </div>
-  </div>
 
 </body>
-
 </html>
