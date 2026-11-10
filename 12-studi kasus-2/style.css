@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+html {
+   background-color: #050505;
+}
+body {
+  line-height: 1.6;
+  font-family: Inter, Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #050505;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+header .genre-tags {
+  margin-top: 10px;
+}
+
+header .genre-tags .tag {
+display: inline-block;
+background-color: rgb(218, 165, 32);
+padding: 6px 16px;
+margin: 0 5px;
+border-radius: 20px;
+font-size: 0.9rem;
+
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding:  20px;
+}
+
+main .profile-card {
+background-color: #fff;
+padding: 20px;
+margin: 30px 0px;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+main .profile-card .Perunggu-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  border: 5px solid rgb(218, 165, 32);
+  margin-bottom: 20px;
+}
+
+main .profile-card .bio {
+  max-width: 600px; 
+  margin: 0 auto;
+}
+
+main .profile-card .bio p {
+  margin-bottom: 15px;
+}
+
+main .profile-card .stats{
+  margin-top: 30px;
+}
+
+main .profile-card .stats .stat-items {
+  display: inline-block;
+  width: 150px;
+  padding: 20px;
+  background-color: #f3f0f0;
+  margin: 10px 20px;
+  border-radius: 8px;
+  border: 3px solid rgb(218, 165, 32);
+}
+
+main .profile-card .stats .stat-items .stat-value {
+  font-size: 0.9rem;
+  color: rgb(218, 165, 32);
+  font-weight: bold;
+}
+
+main .discography {
+  margin-top: 50px 0;
+}
+
+main .discography h2, main .social-links h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .discography .album-list {
+  text-align: center;
+}
+
+main .discography .album-list .album-card {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .discography .album-list .album-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+main .discography .album-list .album-card h3 {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card .btn-listen {
+  display: inline-block;
+  background-color: rgb(218, 165, 32);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+main .discography .album-list .album-card .btn-listen:hover {
+  background-color: #0b9de6;
+}
+
+main .social-links {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+main .social-links .social-btn {
+  display: inline-block;
+  background-color: rgb(218, 165, 32);
+  color: #fff;
+  padding: 12px 30px;
+  margin:  10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .social-links .social-btn:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #050505;
+  color: #fff;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #06b6d4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
